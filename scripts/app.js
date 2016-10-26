@@ -6,7 +6,8 @@ $(document).ready(function(){
 	// squash the bugs isn't showing up
 	function addSubHeader() {
 		var subHeader = $('<small>Squash the bugs!</small>');
-		$('h1').appendChild(subHeader);
+		console.log(subHeader);
+		$('h1').append(subHeader);
 	}
 
 	
@@ -14,6 +15,7 @@ $(document).ready(function(){
 
 	// the form redirects when it should just update the count of "E"s
 	$('form').on('submit', function(e){
+		e.preventDefault();
 		console.log('form submitted');
 		var input = $('input').eq(0).val();
 
