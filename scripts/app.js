@@ -5,11 +5,11 @@ $(document).ready(function(){
 
 	// squash the bugs isn't showing up
 	function addSubHeader() {
-		var subHeader = $('<small>Squash the bugs!</small>');
+		var subHeader = $('<small>&nbsp&nbspsquash the bugs!</small>');
 		$('h1').append(subHeader);
 	}
 
-	
+
 
 
 	// the form redirects when it should just update the count of "E"s
@@ -43,7 +43,7 @@ $(document).ready(function(){
     }
 
     addLinks();
-    $('btn').on('click', function () {
-	            alert(i);
+    $('.btn-link').on('click', function () {
+	            alert($('.btn-link').html);
 	        });
 });
