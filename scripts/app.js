@@ -38,12 +38,12 @@ $(document).ready(function(){
 	    for (var i=0; i<5; i++) {
 	        $link = $('<a href="#" class="btn btn-link"></a>');
 	        $link.html('Link '+i);
-	        $link.on('click', function () {
-	            alert(i);
-	        });
 	        $ul.append($link);
 	    }
     }
 
     addLinks();
+    $('btn').on('click', function () {
+	            alert(i);
+	        });
 });
